@@ -1,0 +1,252 @@
+/* Global Rules  */
+:root {
+    --main-color:#0078ff
+}
+body {
+    background-color: #f5f5f5;
+}
+.line::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    left: 50%;
+    bottom: -15%;
+    transform: translate(-50%, -50%);
+    background-color: var(--main-color);
+}
+.bg-forest {
+    background-image: url(../images/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 8rem 0;
+}
+/* End global  */
+nav {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+/* Start home  */
+.home {
+    background-image: url(../images/hero-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    
+}
+.home .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;   
+}
+.home .overlay h4::after {
+    content: "|";
+    height: 50px;
+    width: 2px;
+    color: white;
+    animation: Typing 14s infinite;
+}
+@keyframes Typing {
+    0% {content:'D|';}
+    1% {content:'De|';}
+    2% {content:'Dev|';}
+    3% {content:'Devo|';}
+    4% {content:'Devol|';}
+    5% {content:'Devolo|';}
+    6% {content:'Devolop|';}
+    7% {content:'Devolope|';}
+    8% {content:'Devoloper|';}
+    9% {content:'Devolope|';}
+    10% {content:'Devolop|';}
+    11% {content:'Devolo|';}
+    13% {content:'Devol|';}
+    15% {content:'Devo|';}
+    17% {content:'Dev|';}
+    19% {content:'De|';}
+    21% {content:'D|';}
+    23% {content:'F|';}
+    24% {content:'Fr|';}
+    25% {content:'Fre|';}
+    26% {content:'Free|';}
+    27% {content:'Freel|';}
+    28% {content:'Freela|';}
+    29% {content:'Freelan|';}
+    30% {content:'Freelanc|';}
+    31% {content:'Freelance|';}
+    32% {content:'Freelancer|';}
+    33% {content:'Freelance|';}
+    34% {content:'Freelanc|';}
+    35% {content:'Freelan|';}
+    36% {content:'Freela|';}
+    37% {content:'Freel|';}
+    38% {content:'Free|';}
+    39% {content:'Fre|';}
+    40% {content:'Fr|';}
+    41% {content:'F|';}
+    42% {content:'P|';}
+    43% {content:'Po|';}
+    44% {content:'Pho|';}
+    45% {content:'Phot|';}
+    46% {content:'Photo|';}
+    47% {content:'Photog|';}
+    48% {content:'Photogr|';}
+    49% {content:'Photogra|';}
+    50% {content:'Photograg|';}
+    51% {content:'Photograph|';}
+    52% {content:'Photographe|';}
+    53% {content:'Photographer|';}
+    54% {content:'Photographe|';}
+    60% {content:'Photograph|';}
+    62% {content:'Photograg|';}
+    64% {content:'Photogra|';}
+    66% {content:'Photogr|';}
+    68% {content:'Photog|';}
+    70% {content:'Photo|';}
+    72% {content:'Phot|';}
+    74% {content:'Pho|';}
+    76% {content:'Ph|';}
+    78% {content:'P|';}
+    80% {content:'D|';}
+    84% {content:'De|';}
+    86% {content:'Des|';}
+    88% {content:'Desi|';}
+    90% {content:'Desig|';}
+    91% {content:'Design|';}
+    92% {content:'Designe|';}
+    93% {content:'Designer|';}
+    94% {content:'Designe|';}
+    95% {content:'Design|';}
+    96% {content:'Desig|';}
+    97% {content:'Desi|';}
+    98% {content:'Des|';}
+    99% {content:'De|';}
+    100% {content:'D|';}
+}
+/* End home  */
+/* Start About  */
+.about .me::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: var(--main-color);
+    width: 100px;
+    bottom: -12px;
+}
+/* End About  */
+/* Start services  */
+.services .circle {
+    height: 100px;
+    width: 100px;
+    font-size: 2rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 0 10px var(--main-color);
+    display: block;
+    transition: all 0.5s;
+}
+.services .circle:hover {
+    background-color: var(--main-color);
+    box-shadow: 0 0 0 10px #cde1f8;
+    color: white;
+}
+/* start counter  */
+.counter {
+    background-image: url(../images/counters-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 8rem 0;
+}
+.counter .circle {
+    height: 60px;
+    width: 60px;
+    font-size: 2rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 0 10px #cde1f8;
+    display: block;
+    line-height: 1.7;
+}
+/* End counter  */
+/* start portfolio */
+.portfolio .image {
+    overflow: hidden;
+}
+.portfolio .box img {
+    transition: all 0.8s;
+}
+.portfolio .box img:hover {
+    transform: scale(1.3);
+}
+/* end portfolio */
+/* Start people  */
+.people .carousel-item img { 
+    width: 150px ;
+}
+.people  .carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+} 
+/* End people  */
+/* Start blog  */
+.blog .card-footer img {
+    width: 32px;
+    height: 32px;
+    margin-right: 4px;
+    border-radius: 50%;
+}
+.blog .card-footer .hov {
+    transition: all 0.5s;
+}
+.blog .card-footer .hov:hover{
+    color: var(--main-color)
+}
+/* End blog  */
+/* Start contact  */
+.contact .title .underline::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: var(--main-color);
+    width: 100px;
+    top: 90px;
+}
+.contact .bor {
+    transition: all 0.5s;
+}
+.contact .bor:hover button {
+    box-shadow: 0 0 0 4px #cde1f8;
+}
+.social li {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 0 15px 0 0;
+    box-shadow: 0 0 0 3px #0078ff;
+    transition: all 500ms ease;
+    transition: all 0.5s;
+}
+.social li:hover {
+    background-color: var(--main-color);
+    color: #fff;
+    box-shadow: 0 0 0 3px #cde1f8;
+    transition: all 500ms ease;
+}
+/* End contact  */
+/* Start footer  */
+footer {
+    background-color: #0062d3;;
+}
+/* End footer  */
