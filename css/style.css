@@ -26,6 +26,9 @@ body {
 nav {
     background-color: rgba(0, 0, 0, 0.9);
 }
+nav .nav-link {
+    color: white;
+}
 /* Start home  */
 .home {
     background-image: url(../images/hero-bg.jpg);
